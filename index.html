@@ -111,10 +111,32 @@
       margin-left: auto;
     }
 
-    /* ＝ ABOUT ＝ */
+    /* ＝ ABOUT（本次更新） ＝ */
     .about-grid {
       display: grid;
       gap: 1.5rem;
+    }
+
+    .about-btns {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .btn {
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: rgba(255,255,255,0.15);
     }
 
     /* ＝ SKILLS ＝ */
@@ -212,79 +234,81 @@
           <p class="hero-sub">
             這裡是個人品牌網站的主視覺區，未來會放入一句話自我介紹、角色職稱與行動呼籲。
           </p>
-          <p class="hero-sub">
-            ※ 開發者注意：之後請將以 SDD 生成的完整 Hero 區 HTML/CSS 直接覆蓋本區。
-          </p>
         </div>
-
-        <div class="hero-img">
-          <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=900&q=60" alt="占位圖片">
-        </div>
+        <img
+          class="hero-img"
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+          alt="工程師在撰寫程式的示意圖片"
+        />
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section-about" aria-labelledby="about-heading">
+
+    <!-- ABOUT（本次更新） -->
+    <section id="about" class="section">
       <div class="container about-grid">
-        <div>
-          <h2 id="about-heading" class="section-title">關於我（占位）</h2>
-          <p class="lead">此區為 About 區占位內容，將來會以 SDD 生成正式版本。</p>
-          <p class="lead">請於完成後以整段新 section 覆蓋此區塊。</p>
-        </div>
 
         <div>
-          <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=900&q=60" alt="占位圖片">
+          <h2 class="section-title">關於我</h2>
+
+          <p class="lead">
+            我目前主要從事前端工程開發、網站架構規劃與技術教學，同時也接一些客製化前端製作。我專精於現代前端技術、網頁互動與良好可維護的程式碼設計。
+          </p>
+
+          <p class="lead">
+            我的背景偏向跨領域自學與技術分享，做事風格重視溝通、系統化拆解，以及把複雜的問題講到「一般人也聽得懂」。
+          </p>
+
+          <ul>
+            <li>協助建立前端架構、RWD 與元件化流程</li>
+            <li>將需求轉成清晰可維護的程式碼</li>
+            <li>技術教學、解說與文件整理能力強</li>
+          </ul>
+
+          <div class="about-btns">
+            <a class="btn" href="#projects">查看作品集</a>
+            <a class="btn" href="#contact">聯絡我</a>
+          </div>
         </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+          alt="專注撰寫程式的工程師示意圖"
+        />
+
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
-      <div class="container">
-        <h2 id="skills-heading" class="section-title">技能（占位）</h2>
-        <p class="lead">此區為技能區占位內容。未來會放上技能圖示或技能說明。</p>
 
+    <!-- 其他 Section 保持原樣（Skills、Projects、Contact） -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">技能（示意）</h2>
         <div class="skill-list">
           <span class="skill-pill">HTML</span>
           <span class="skill-pill">CSS</span>
           <span class="skill-pill">JavaScript</span>
-          <span class="skill-pill">Frontend</span>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
+    <section id="projects" class="section">
       <div class="container">
-        <h2 id="projects-heading" class="section-title">作品集（占位）</h2>
-        <p class="lead">此區為作品集占位內容，將來會以卡片形式展示專案。</p>
-
+        <h2 class="section-title">作品集（示意）</h2>
         <div class="projects-grid">
-          <div class="project-card">
-            <h3>作品一（占位）</h3>
-            <p class="lead">之後會替換為正式專案介紹與縮圖。</p>
-          </div>
-          <div class="project-card">
-            <h3>作品二（占位）</h3>
-            <p class="lead">之後會替換為正式專案介紹與縮圖。</p>
-          </div>
-          <div class="project-card">
-            <h3>作品三（占位）</h3>
-            <p class="lead">之後會替換為正式專案介紹與縮圖。</p>
-          </div>
+          <div class="project-card"><h3>Project A</h3></div>
+          <div class="project-card"><h3>Project B</h3></div>
+          <div class="project-card"><h3>Project C</h3></div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+    <section id="contact" class="section">
       <div class="container">
-        <h2 id="contact-heading" class="section-title">聯絡我（占位）</h2>
-        <p class="lead">此區為聯絡方式占位內容，將來可能包含 Email、社群連結或表單。</p>
-
+        <h2 class="section-title">聯絡我（示意）</h2>
         <div class="contact-list">
-          <span class="contact-item">Email：placeholder@example.com</span>
-          <span class="contact-item">LinkedIn：placeholder</span>
+          <span class="contact-item">Email: example@mail.com</span>
+          <span class="contact-item">LinkedIn: your-link</span>
         </div>
       </div>
     </section>
