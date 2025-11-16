@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name · Frontend Dev</title>
+  <title>Your Name · 個人品牌前端工程師網站</title>
+  <meta name="description" content="這是一個用來介紹個人背景、專業技能、作品集展示與提供聯絡方式的前端工程師個人品牌網站，採用簡潔深色風格與 RWD 響應式版面。">
 
   <style>
-    /* ------------------------------
-       ＝ 全站變數（不可用 ID） ＝
-    ------------------------------ */
-    :root{
+    :root {
       --bg: #0b1220;
       --panel: #0f1724;
       --text: #e8eef4;
@@ -19,6 +17,7 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; }
+
     body {
       margin: 0;
       background: var(--bg);
@@ -38,9 +37,7 @@
       padding: 0 1rem;
     }
 
-    /* ------------------------------
-       ＝ 導覽列 Nav ＝
-    ------------------------------ */
+    /* ＝ 導覽列 ＝ */
     .site-header {
       position: sticky;
       top: 0;
@@ -83,21 +80,16 @@
       background: rgba(255,255,255,0.05);
     }
 
-    /* ------------------------------
-       ＝ Section 基礎樣式 ＝
-    ------------------------------ */
+    /* ＝ Section 基礎樣式 ＝ */
     .section { padding: 2.5rem 0; }
     .section-title {
       margin: 0 0 1rem 0;
       font-size: 1.4rem;
       font-weight: 700;
-      color: var(--text);
     }
     .lead { color: var(--muted); margin-bottom: 1rem; }
 
-    /* ------------------------------
-       ＝ Hero 區 ＝
-    ------------------------------ */
+    /* ＝ HERO ＝ */
     .section-hero {
       background: linear-gradient(180deg, rgba(14,19,28,0.7), rgba(6,10,20,0.6));
     }
@@ -119,17 +111,13 @@
       margin-left: auto;
     }
 
-    /* ------------------------------
-       ＝ About ＝
-    ------------------------------ */
+    /* ＝ ABOUT ＝ */
     .about-grid {
       display: grid;
       gap: 1.5rem;
     }
 
-    /* ------------------------------
-       ＝ Skills ＝
-    ------------------------------ */
+    /* ＝ SKILLS ＝ */
     .skill-list {
       display: flex;
       gap: 0.6rem;
@@ -144,9 +132,7 @@
       color: var(--text);
     }
 
-    /* ------------------------------
-       ＝ Projects ＝
-    ------------------------------ */
+    /* ＝ PROJECTS ＝ */
     .projects-grid {
       display: grid;
       gap: 1rem;
@@ -163,9 +149,7 @@
       margin: 0 0 0.4rem 0;
     }
 
-    /* ------------------------------
-       ＝ Contact ＝
-    ------------------------------ */
+    /* ＝ CONTACT ＝ */
     .contact-list {
       display: flex;
       flex-direction: column;
@@ -175,9 +159,7 @@
       color: var(--muted);
     }
 
-    /* ------------------------------
-       = Footer =
-    ------------------------------ */
+    /* ＝ FOOTER ＝ */
     footer {
       margin-top: auto;
       padding: 2rem 0;
@@ -186,9 +168,7 @@
       font-size: 0.9rem;
     }
 
-    /* ------------------------------
-       ＝ RWD ＝
-    ------------------------------ */
+    /* ＝ RWD ＝ */
     @media (min-width: 768px){
       .hero-grid {
         grid-template-columns: 1fr 1fr;
@@ -208,9 +188,7 @@
 <body>
 <div class="page">
 
-  <!-- ==============================
-       Header / Nav
-  =============================== -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container nav">
       <div class="site-logo">Your Name · Frontend Dev</div>
@@ -226,120 +204,93 @@
 
   <main>
 
-    <!-- ==============================
-         HERO
-    =============================== -->
+    <!-- HERO -->
     <section id="hero" class="section section-hero">
       <div class="container hero-grid">
-
         <div>
           <h1 class="hero-title">這裡是 Hero 區（全站唯一 h1）</h1>
           <p class="hero-sub">
-            這裡會放一句話自我介紹、核心職稱、行動呼籲等正式內容。<br>
-            目前先使用占位文字，之後會用 Section SDD Prompt 完整替換。
+            這裡是個人品牌網站的主視覺區，未來會放入一句話自我介紹、角色職稱與行動呼籲。
           </p>
           <p class="hero-sub">
-            ※ 開發者注意：之後請將整段 section（含 HTML/CSS）以 SDD 輸出內容完全覆蓋此區。
+            ※ 開發者注意：之後請將以 SDD 生成的完整 Hero 區 HTML/CSS 直接覆蓋本區。
           </p>
         </div>
 
         <div class="hero-img">
-          <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=900&q=60" alt="開發者展示照片（占位用）">
+          <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=900&q=60" alt="占位圖片">
         </div>
-
       </div>
     </section>
 
-
-    <!-- ==============================
-         ABOUT
-    =============================== -->
+    <!-- ABOUT -->
     <section id="about" class="section section-about" aria-labelledby="about-heading">
       <div class="container about-grid">
         <div>
           <h2 id="about-heading" class="section-title">關於我（占位）</h2>
-          <p class="lead">此處是 About 區的占位內容。</p>
-          <p class="lead">
-            未來會利用 Section SDD 產生完整的 About 區內容，<br>
-            產生後請直接複製整個新 section 覆蓋本段內容。
-          </p>
+          <p class="lead">此區為 About 區占位內容，將來會以 SDD 生成正式版本。</p>
+          <p class="lead">請於完成後以整段新 section 覆蓋此區塊。</p>
         </div>
 
         <div>
-          <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=900&q=60" alt="關於我的示意圖片（占位）">
+          <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=900&q=60" alt="占位圖片">
         </div>
       </div>
     </section>
 
-
-    <!-- ==============================
-         SKILLS
-    =============================== -->
+    <!-- SKILLS -->
     <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
       <div class="container">
         <h2 id="skills-heading" class="section-title">技能（占位）</h2>
-        <p class="lead">此區將來放技能列表、能力樹等，現在是占位文字。</p>
+        <p class="lead">此區為技能區占位內容。未來會放上技能圖示或技能說明。</p>
 
         <div class="skill-list">
-          <span class="skill-pill">HTML（占位）</span>
-          <span class="skill-pill">CSS（占位）</span>
-          <span class="skill-pill">JavaScript（占位）</span>
-          <span class="skill-pill">UI / UX（占位）</span>
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Frontend</span>
         </div>
-
-        <p class="lead">※ 之後會以 Section SDD 替換整段。</p>
       </div>
     </section>
 
-
-    <!-- ==============================
-         PROJECTS
-    =============================== -->
+    <!-- PROJECTS -->
     <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
       <div class="container">
         <h2 id="projects-heading" class="section-title">作品集（占位）</h2>
-        <p class="lead">此區將顯示專案卡片，目前僅示意。</p>
+        <p class="lead">此區為作品集占位內容，將來會以卡片形式展示專案。</p>
 
         <div class="projects-grid">
           <div class="project-card">
-            <h3>作品 A（占位）</h3>
-            <p>未來會展示作品摘要、技術標籤、縮圖等。</p>
+            <h3>作品一（占位）</h3>
+            <p class="lead">之後會替換為正式專案介紹與縮圖。</p>
           </div>
           <div class="project-card">
-            <h3>作品 B（占位）</h3>
-            <p>正式內容將由 Section SDD 自動生成。</p>
+            <h3>作品二（占位）</h3>
+            <p class="lead">之後會替換為正式專案介紹與縮圖。</p>
           </div>
           <div class="project-card">
-            <h3>作品 C（占位）</h3>
-            <p>此為預留格，之後會整段覆蓋。</p>
+            <h3>作品三（占位）</h3>
+            <p class="lead">之後會替換為正式專案介紹與縮圖。</p>
           </div>
         </div>
       </div>
     </section>
 
-
-    <!-- ==============================
-         CONTACT
-    =============================== -->
+    <!-- CONTACT -->
     <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
       <div class="container">
         <h2 id="contact-heading" class="section-title">聯絡我（占位）</h2>
-        <p class="lead">此區將放 Email、社群、聯絡方式，現為占位文字。</p>
+        <p class="lead">此區為聯絡方式占位內容，將來可能包含 Email、社群連結或表單。</p>
 
         <div class="contact-list">
-          <div class="contact-item">Email（占位）：example@mail.com</div>
-          <div class="contact-item">LinkedIn（占位）：/yourname</div>
+          <span class="contact-item">Email：placeholder@example.com</span>
+          <span class="contact-item">LinkedIn：placeholder</span>
         </div>
-
-        <p class="lead">※ 之後會以 Section SDD 取代整段。</p>
       </div>
     </section>
 
   </main>
 
-  <!-- ==============================
-       FOOTER
-  =============================== -->
   <footer>
     © 2025 Your Name. All rights reserved.
   </footer>
